@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="output.css">
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/config.js" defer></script>
+    <title>clone_x</title>
+</head>
+<body class="bg-[var(--color-black)]">
+    <main>
+        <section class="flexsecond">
+            <div>
+                <img src="image/twitter.png" alt="logo_x">
+            </div>
+            <div class="flexprimary h-[80vh]">
+                <h1 class="grandtitre">Ça se passe <br> maintenant</h1>
+                <div class="styletext text-[1.3rem] font-semibold">Inscrivez-vous.</div>
+                <div class="flexprimary h-[15rem]">
+                    <button class="btnprimary"><img src="image/google.png" alt="logo_Google" class="logosize"> S'inscrire avec Google</button>
+                    <button class="btnprimary"><img src="image/logo-apple.png" alt="logo_Apple" class="logosize"> S'inscrire avec Apple</button>
+                    <div>
+                        <div></div>
+                        <div class="styletext">Où</div>
+                        <div></div>
+                    </div>
+                    <button id="btnSignup" class="btn">Créer un compte</button>
+                    <p class="styletext text-[0.7rem]">
+                        En vous inscrivant, vous acceptez les <a href="#" class="stylelink">Conditions </a><br> <a href="#" class="stylelink">d'utilisation</a> et la <a href="#" class="stylelink">Politique de confidentialité</a>, notamment <br> l'<a href="#" class="stylelink">Utilisation des cookies.</a> 
+                    </p>
+                </div>
+                <div class="flex flex-col h-[5rem] justify-between">
+                    <div class="styletext">Vous avez déjà un compte ?</div>
+                    <button id="btnLogin" class="btnconnection">Se connecter</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <!-- ceci est la page d'inscription -->
+<main id="formSingup" class="hidden">
+    <section class="firstform">
+        <div class="layoutform">
+            <div class="">
+                <div class="layoutlogo">
+                    <img src="image/close_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.png" alt="close" class="closepage fermer"/>
+                    <img src="image/twitter.png" alt="Logo X" class="logosize mx-auto"/>
+                </div>
+                <div class="form2">
+                    <form class="form">
+                        <h2 class="styletitreh2">Créer votre compte</h2>
+                        <input type="text" placeholder="Nom et prénom" class="input"/>
+                        <input type="text" placeholder="Téléphone" class="input"/>
+                        <a href="#" class="stylelink text-right w-full block">Utiliser un email</a>
+                        <div class="flex flex-col space-y-2">
+                            <label class="block font-semibold mb-1">Date de naissance</label>
+                            <p class="styletext text-[0.8rem]">
+                            Cette information ne sera pas affichée publiquement. Confirmez
+                            votre âge, même si ce compte est pour une entreprise, un animal
+                            de compagnie ou autre chose.
+                            </p>
+                            <div class="flex space-x-5">
+                                <select class="date">
+                                    <option>Mois</option>
+                                </select>
+                                <select class="date">
+                                    <option>Jour</option>
+                                </select>
+                                <select class="date">
+                                    <option>Année</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btnsuivant">Suivant</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+</main>
+
+
+    <!-- formulaire de connexion -->
+<main id="formLogin" class="hidden">
+
+    <section class="firstform">
+        <div class="layoutform">
+            <div class="flex flex-col h-full">
+                <div class="layoutlogo">
+                    <img src="image/close_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.png" alt="close" class="closepage fermerLogin"/>
+                    <img src="image/twitter.png" alt="Logo X" class="logosize mx-auto"/>
+                </div>
+                <div class="">
+                    
+                        <form action="" class="w-full h-[30rem] flex flex-col justify-between items-center">
+                            
+                            <div class="flex flex-col justify-between w-[20rem] h-[25rem]">
+                                <h2 class="styletitreh2">Connectez‑vous à X</h2>
+                                <button class="btnprimary w-full"><img src="image/google.png" alt="logo_Google" class="logosize"> Se connecter avec Gmail</button>
+                                <button class="btnprimary w-full"><img src="image/logo-apple.png" alt="logo_Apple" class="logosize"> Se connecter avec Apple</button>
+                                <div>
+                                    <div></div>
+                                    <div class="styletext">Où</div>
+                                    <div></div>
+                                </div>
+                                <input type="text" placeholder="Numéro de téléphone, adresse email" class="input h-[3rem]"/>
+                                <button class="btn w-full">Suivant</button>
+                                <button class="btnconnection w-full">Mot de passe oublié ?</button>
+                            </div>
+                            
+                            <p class="styletext">Vous n'avez pas de compte ? <a href="#" class="stylelink">Inscrivez-vous</a></p>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>    
+
+
+    <!-- formulaire de saisisi du mot de passe pour se connecter -->
+
+<main id="formPassword" class="hidden">
+
+
+    <section class="firstform">
+        <div class="layoutform">
+            <div class="flex flex-col h-[35rem] w-full items-center">
+                <div class="layoutlogo">
+                    <img src="image/close_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.png" alt="close" class="closepage fermer"/>
+                    <img src="image/twitter.png" alt="Logo X" class="logosize mx-auto"/>
+                </div>
+                <form class="flex flex-col justify-between h-full w-[23rem]">
+                    <div>
+                        <h2 class="styletitreh2">Entrez votre mot de passe</h2>
+                        <div>
+                            <input type="text" placeholder="*****" class="input h-[3rem]"/>
+                            <a href="#" class="stylelink">Mot de passe oublié ? </a>
+                        </div>
+                    </div>
+                    <div class="h-[8rem] flex flex-col justify-between">
+                        <div>
+                            <button class="btnsuivant bg-white text-black">Se connecter</button>
+                        </div>
+                        <p class="styletext">Vous n'avez pas de compte ? <a href="#" class="stylelink">Inscrivez-vous</a></p>
+                    </div>
+                </form>
+                
+                
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
+
+

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Bree+Serif&family=Caramel&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import "tailwindcss";
+
+:root {
+  --color-primary: oklch(0.65 0.16 264);
+  --color-whait: oklch(94.552% 0.01489 281.878);
+  --color-black: oklch(0% 0 0);
+  --color-bg-btn: oklch(100% 0.00011 271.152);
+  --color-border: oklch(53.565% 0.00123 14.461 / 0.651);
+  --color-bleu: oklch(65.149% 0.15957 263.768 / 0.233);
+
+  --police-text: 'roboto';
+}
+
+
+.background{
+  @apply bg-[var(--color-black)] m-[1rem] flex justify-between;
+}
+
+.nav-link{
+  @apply flex flex-col justify-between w-[18rem] h-[27rem] border-2 border-[var(--color-border)] p-[1rem] rounded-xl;
+}
+
+.layout-nav{
+  @apply flex flex-col justify-between h-[33rem];
+}
+
+.nav-pane{
+  @apply w-[25%] h-[98vh] flex flex-col justify-between ml-[1.5rem];
+}
+
+.header-section-one{
+  @apply flex items-center gap-[3rem] border-t-2 border-l-2 border-r-2 border-[var(--color-border)] rounded-md;
+}
+
+.info-profil{
+  @apply border-l-2 border-r-2 border-b-2 border-[var(--color-border)] rounded-md;
+}
+
+.name-profil{
+  @apply flex w-full gap-[3rem] mt-[1rem] mb-[0.5rem] p-[0.5rem];
+}
+.info-line-two{
+@apply flex gap-[3.1rem] w-full text-[var(--color-border)] font-[roboto];
+}
+.info-line-tree{
+  @apply flex gap-[2.5rem] w-full text-[var(--color-border)] font-[roboto] pt-[0.5rem];
+}
+
+.space{
+  @apply flex items-center gap-[0.5rem];
+}
+
+.section-rigth{
+  @apply w-[30%] flex flex-col;
+}
+
+.suggetion{
+  @apply flex flex-col justify-between h-[20rem] p-[1rem] border-2 border-[var(--color-border)] rounded-xl mt-[1rem] w-[22rem];
+}
+
+.layout-tendance{
+  @apply flex flex-col justify-between h-full p-[1rem] border-2 border-[var(--color-border)] rounded-xl mt-[1rem] w-full;
+}
+
+/* page de connexion et d'enregistrement */
+
+
+.form{
+  @apply max-w-sm space-y-4 flex flex-col justify-center;
+}
+
+.form2{
+  @apply flex justify-center h-[30rem];
+}
+
+.layoutlogo{
+  @apply flex items-center w-full h-5 justify-between pb-8;
+}
+
+.layout-Profil{
+  @apply flex items-center justify-between w-[15rem] border-2 border-[var(--color-border)] rounded-xl p-[0.5rem] w-[18rem];
+}
+
+.layout-Profil-two{
+  @apply flex items-center justify-between w-full pt-[0.4rem];
+}
+
+.layoutform{
+  @apply w-[38rem] h-[37rem] overflow-auto rounded-xl bg-[var(--color-black)] text-[var(--color-whait)] flex flex-col justify-center px-4 py-8;
+} 
+
+.firstform{
+  @apply  bg-[var(--color-bleu)] flex justify-center items-center absolute inset-0;
+}
+
+/*contenaire flexible*/
+
+.flexsecond{
+  @apply flex flex-row justify-evenly items-center h-[100vh];
+}
+.flexprimary{
+  @apply flex flex-col justify-between;
+}
+
+.autrepage{
+  @apply w-[25rem] h-[30rem] flex flex-col justify-around;
+}
+
+/*bouton*/
+
+.btn {
+  @apply bg-[var(--color-primary)] text-[var(--color-whait)] h-[2.6rem] w-[19rem] rounded-full;
+}
+.btnprimary{
+  @apply bg-[var(--color-bg-btn)] text-[var(--color-black)] h-[2.6rem] w-[19rem] rounded-full flex justify-center items-center gap-[0.3rem];
+}
+
+.btn-nav{
+  @apply flex gap-[2rem];
+}
+
+.btnconnection{
+  @apply bg-[var(--color-black)] text-[var(--color-primary)] h-[2.6rem] w-[19rem] rounded-full border-2 border-[var(--color-border)];
+}
+
+.btn-editer{
+  @apply bg-[var(--color-black)] rounded-full border-2 border-[var(--color-border)] text-[var(--color-whait)] w-[10rem] h-[2rem] mt-[0.5rem] relative left-[22rem]; 
+}
+
+.btn-certification{
+  @apply bg-[var(--color-black)] text-[var(--color-whait)] h-[1.7rem] w-[15rem] rounded-full flex justify-center items-center gap-[0.3rem] border-2 border-[var(--color-bleu)]; 
+}
+
+.btnsuivant{
+  @apply w-full bg-[var(--color-border)] text-[var(--color-white)] font-semibold px-4 py-3 rounded-full mt-6 hover:bg-gray-500 transition;
+}
+.btn-nav-section-center{
+  @apply text-[var(--color-whait)] font-[roboto] flex justify-between p-[1rem];
+}
+/* champ de saisie */
+
+.date{
+  @apply bg-[var(--color-black)] border border-[var(--color-border)] text-[var(--color-whait)] px-3 py-2 rounded;
+}
+
+.input-recherche{
+  @apply bg-[var(--color-black)] rounded-full border-2 border-[var(--color-border)] text-[var(--color-whait)] w-[18rem] h-[2.2rem] px-4 py-1 relative;
+}
+
+.input{
+  @apply w-full h-[4rem] bg-black border border-[var(--color-border)] rounded px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500
+}
+
+.loup{
+  @apply absolute inset-y-[0.3rem] right-0 flex items-center pr-4;
+}
+
+/* taille des logo */
+.closepage{
+  @apply object-cover hover:bg-slate-700 rounded-full;
+}
+
+.logosize{
+  @apply w-[1.3rem];
+}
+
+/*style text*/
+
+.textprofil2{
+  @apply font-[roboto] text-[var(--color-border)];
+}
+
+.style-section-tendance{
+  @apply text-[var(--color-border)] font-[var(--police-text)];
+}
+
+.grandtitre{
+  @apply text-[var(--color-whait)] text-[2.3rem] font-bold font-[roboto];
+}
+
+.stylelink{
+  @apply text-[var(--color-primary)] font-[roboto] hover:underline;
+}
+
+.styletext{
+  @apply text-[var(--color-whait)] font-[roboto];
+}
+
+.styletitreh2{
+  @apply text-[var(--color-whait)] font-[roboto] text-[1.5rem] font-semibold;
+}
+
+.style-h2{
+  @apply text-[var(--color-whait)] font-[roboto] text-[1rem] font-semibold;
+}
+
+
+/* image */
+
+.image-couverture{
+  @apply w-full h-[13rem] object-cover rounded-md;
+}
+
+.image-profil{
+  @apply w-[5rem] border-4 border-black rounded-full absolute top-[10.4rem] left-[1rem];
+}
+
+.layoutImg{
+  @apply w-[2.8rem] rounded-full;
+}
