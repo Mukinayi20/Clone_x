@@ -57,6 +57,12 @@
   @apply w-[30%] flex flex-col;
 }
 
+.section-top-home{
+  @apply pb-[1rem] pt-[0.6rem] border-2 border-[var(--color-border)] rounded-md;
+}
+
+
+
 .suggetion{
   @apply flex flex-col justify-between h-[20rem] p-[1rem] border-2 border-[var(--color-border)] rounded-xl mt-[1rem] w-[22rem];
 }
@@ -109,13 +115,18 @@
   @apply w-[25rem] h-[30rem] flex flex-col justify-around;
 }
 
+
+.nav-home{
+  @apply text-[var(--color-whait)] font-[roboto] flex justify-around;
+}
+
 /*bouton*/
 
 .btn {
   @apply bg-[var(--color-primary)] text-[var(--color-whait)] h-[2.6rem] w-[19rem] rounded-full;
 }
 .btnprimary{
-  @apply bg-[var(--color-bg-btn)] text-[var(--color-black)] h-[2.6rem] w-[19rem] rounded-full flex justify-center items-center gap-[0.3rem];
+  @apply bg-[var(--color-black)] text-[var(--color-whait)] h-[2.6rem] border-2 border-[var(--color-border)] rounded-full flex justify-center items-center gap-[0.3rem];
 }
 
 .btn-nav{
@@ -139,6 +150,10 @@
 }
 .btn-nav-section-center{
   @apply text-[var(--color-whait)] font-[roboto] flex justify-between p-[1rem];
+}
+
+.btn-poste{
+  @apply text-[var(--color-whait)] font-[roboto] border-2 border-[var(--color-border)] h-[2.3rem] w-[8rem] rounded-full mr-[1rem];
 }
 /* champ de saisie */
 
@@ -206,6 +221,9 @@
 
 .image-profil{
   @apply w-[5rem] border-4 border-black rounded-full absolute top-[10.4rem] left-[1rem];
+}
+.image-profil-top-home{
+  @apply w-[3.7rem] border-4 border-black rounded-full ml-[1.4rem];
 }
 
 .layoutImg{
